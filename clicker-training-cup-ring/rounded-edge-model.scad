@@ -1,8 +1,10 @@
 $fn = 100; // improve local rendering
 
-outer_ring = 102;
-inner_ring = 58;
 ring_height = 4;
+circle_dia = ring_height;
+outer_ring = 102 - (circle_dia/2);
+inner_ring = 58 + (circle_dia/2);
+
 ring_width = outer_ring - inner_ring;
 
 
@@ -72,5 +74,3 @@ rotate_extrude() {
     }
 }
 
-
- 
